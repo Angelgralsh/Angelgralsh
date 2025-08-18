@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #F6F6F6;
+    --color-third: #22D4FD;
+
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'Krona One', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.header {
+    padding: 3% 0% 0% 15%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link {
+    font-family: var(--fuente-principal);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-third);
+    text-decoration: none;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+}
+
+.presentacion_contenido {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo-destaque {
+    color: var(--color-third);
+}
+
+.presentacion_contenido_titulo {
+    font-size: 36px;
+    font-family: var(--fuente-secundaria);
+}
+
+.presentacion_contenido_texto {
+    font-family: var(--fuente-principal);
+    font-size: 24px;
+}
+
+.presentacion_enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_enlaces_subtitulos {
+    font-family: var(--fuente-principal);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-secondary);
+    margin-bottom: 8px;
+}
+
+.presentacion_enlaces_link {
+    width: 378px;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 16px;
+    font-family: var(--fuente-principal);
+    border: 2px solid #22D4FD;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion_enlaces_link:hover {
+    background-color: #272722;
+}
+
+.footer {
+    background-color: var(--color-third);
+    color: var(--color-secondary);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-principal);
+    font-size: 24px;
+    font-weight: 400;
+}
+
