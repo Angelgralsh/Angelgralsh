@@ -78,13 +78,13 @@ body {
 }
 
 .presentacion_contenido_titulo {
-    font-size: 36px;
+    font-size: 32px;
     font-family: var(--fuente-secundaria);
 }
 
 .presentacion_contenido_texto {
     font-family: var(--fuente-principal);
-    font-size: 24px;
+    font-size: 20px;
     text-align: justify;
     line-height: 1.6;
     margin-top: 0;
@@ -248,7 +248,7 @@ body {
 
 .experience-page .presentacion_contenido_titulo.experience {
     font-family: var(--fuente-secundaria);
-    font-size: 36px;
+    font-size: 30px;
     color: var(--color-secondary);
     text-align: center;
     margin-bottom: 30px;
@@ -265,7 +265,7 @@ body {
 
 .experience-page .seccion_titulo {
     font-family: var(--fuente-secundaria);
-    font-size: 32px;
+    font-size: 25px;
     color: var(--color-third);
     text-align: center;
     margin-bottom: 30px;
@@ -304,21 +304,21 @@ body {
 }
 
 .experience-page .experiencia_titulo {
-    font-size: 28px;
+    font-size: 18px;
     color: var(--color-third);
     margin-bottom: 8px;
     font-family: var(--fuente-secundaria);
 }
 
 .experience-page .experiencia_periodo {
-    font-size: 16px;
+    font-size: 10px;
     color: #b0b0b0;
     margin-bottom: 8px;
     font-family: var(--fuente-principal);
 }
 
 .experience-page .experiencia_descripcion {
-    font-size: 16px;
+    font-size: 12px;
     margin-left: 18px;
     margin-bottom: 0;
     font-family: var(--fuente-principal);
@@ -338,7 +338,7 @@ body {
     border: 1px solid var(--color-third);
     border-radius: 8px;
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 13px;
     font-family: var(--fuente-principal);
     font-weight: 500;
     margin-bottom: 0;
