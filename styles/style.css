@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ----- Variables de Colores y Fuentes ----- */
 :root {
     --color-primary: #000000;
     --color-secondary: #F6F6F6;
     --color-third: #22D4FD;
-
     --fuente-principal: 'Montserrat', sans-serif;
     --fuente-secundaria: 'Krona One', sans-serif;
 }
 
+/* ----- Estilos Generales ----- */
 * {
     padding: 0;
     margin: 0;
@@ -20,6 +21,16 @@ body {
     color: var(--color-secondary);
 }
 
+.footer {
+    background-color: var(--color-third);
+    color: var(--color-primary);
+    padding: 20px;
+    text-align: right;
+    font-family: var(--fuente-principal);
+    font-size: 15px;
+}
+
+/* ----- Estilos del Encabezado (Header) ----- */
 .header {
     padding: 3% 0% 0% 15%;
 }
@@ -37,18 +48,28 @@ body {
     text-decoration: none;
 }
 
+/* ----- Estilos de la Página Principal (Home) y Acerca de (About) ----- */
 .presentacion {
+    padding: 3% 10%;
     display: flex;
-    align-items: center;
-    padding: 6% 15%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start; /* Align items to top for better text-image alignment */
+    gap: 40px; /* Reduced gap for tighter layout */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .presentacion_contenido {
-    width: 615px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    flex: 1; /* Take remaining space */
+    max-width: 60%; /* Limit text width to balance with image */
+}
+
+.imagen-pefil {
+    flex-grow: 1;
+    padding-top: 40px;
 }
 
 .titulo-destaque {
@@ -63,6 +84,9 @@ body {
 .presentacion_contenido_texto {
     font-family: var(--fuente-principal);
     font-size: 24px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 0;
 }
 
 .presentacion_enlaces {
@@ -100,13 +124,220 @@ body {
     background-color: #272722;
 }
 
-.footer {
-    background-color: var(--color-third);
+/* ----- Estilos para la Imagen en "About Me" ----- */
+.imagen_flotante {
+    width: 250px; /* Fixed width for consistency */
+    height: auto;
+    border-radius: 8px;
+    flex: 0 0 auto; /* Prevent image from stretching */
+}
+
+/* ----- Estilos de la Página de Experiencia (Experience) ----- */
+.experience_section {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.presentacion_contenido_titulo.experience {
+    font-family: var(--fuente-secundaria);
+    font-size: 36px;
     color: var(--color-secondary);
-    padding: 24px;
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.seccion_principal {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.seccion_titulo {
+    font-family: var(--fuente-secundaria);
+    font-size: 32px;
+    color: var(--color-third);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experiencia_contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.experiencia_carrusel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+
+.experiencia_item {
+    background-color: #1a1a1a;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--color-third);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 calc(50% - 12.5px);
+}
+
+.experiencia_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(34, 212, 253, 0.25);
+}
+
+.experiencia_titulo {
+    font-family: var(--fuente-secundaria);
+    font-size: 28px;
+    color: var(--color-third);
+    margin-bottom: 8px;
+}
+
+.experiencia_periodo {
     font-family: var(--fuente-principal);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
+    color: var(--color-secondary);
+    margin-bottom: 16px;
+}
+
+.experiencia_descripcion {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-secondary);
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experiencia_descripcion li {
+    margin-bottom: 8px;
+}
+
+.seccion_habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.habilidad_contenedor_tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.habilidad_tarjeta {
+    background-color: #1a1a1a;
+    color: var(--color-third);
+    font-family: var(--fuente-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid var(--color-third);
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.habilidad_tarjeta:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: #272722;
+    color: var(--color-third);
+}
+
+/* ----- Estilos para la Página de Estudios y Certificaciones ----- */
+.seccion_estudios {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.seccion_estudios_titulo {
+    font-family: var(--fuente-secundaria);
+    font-size: 32px;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.estudio_item {
+    background-color: #1a1a1a;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--color-third);
+}
+
+.estudio_titulo {
+    font-family: var(--fuente-secundaria);
+    font-size: 24px;
+    color: var(--color-third);
+    margin-bottom: 8px;
+}
+
+.estudio_institucion,
+.estudio_periodo {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    color: var(--color-secondary);
+    margin-bottom: 4px;
+}
+
+.estudio_descripcion {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-secondary);
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.estudio_descripcion li {
+    margin-bottom: 4px;
+}
+
+.seccion_certificaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seccion_certificaciones_titulo {
+    font-family: var(--fuente-secundaria);
+    font-size: 32px;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.certificacion_item {
+    background-color: #1a1a1a;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--color-third);
+}
+
+.certificacion_titulo {
+    font-family: var(--fuente-secundaria);
+    font-size: 24px;
+    color: var(--color-third);
+    margin-bottom: 8px;
+}
+
+.certificacion_institucion,
+.certificacion_periodo {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    color: var(--color-secondary);
+    margin-bottom: 4px;
 }
 
