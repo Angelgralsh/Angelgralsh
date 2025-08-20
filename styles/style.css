@@ -49,6 +49,7 @@ body {
     text-decoration: none;
 }
 
+
 /* ----- HOME (index.html) ----- */
 .presentacion {
     padding: 3% 10%;
@@ -163,7 +164,7 @@ body {
 }
 
 .about-page .presentacion_contenido_titulo {
-    font-size: 36px;
+    font-size: 22px;
     font-family: var(--fuente-secundaria);
     margin-bottom: 18px;
 }
@@ -185,7 +186,7 @@ body {
 .about-page .seccion_estudios_titulo,
 .about-page .seccion_certificaciones_titulo {
     font-family: var(--fuente-secundaria);
-    font-size: 28px;
+    font-size: 22px;
     color: var(--color-third);
     margin-bottom: 18px;
 }
@@ -248,7 +249,7 @@ body {
 
 .experience-page .presentacion_contenido_titulo.experience {
     font-family: var(--fuente-secundaria);
-    font-size: 30px;
+    font-size: 22px;
     color: var(--color-secondary);
     text-align: center;
     margin-bottom: 30px;
@@ -358,7 +359,7 @@ body {
 }
 
 .video-page .presentacion_contenido_titulo {
-    font-size: 36px;
+    font-size: 22px;
     font-family: var(--fuente-secundaria);
     color: var(--color-third);
     margin-bottom: 24px;
@@ -428,7 +429,7 @@ body {
         margin-bottom: 12px;
     }
     .about-page .presentacion_contenido_titulo {
-        font-size: 28px;
+        font-size: 32px;
     }
     .about-page .presentacion_contenido_texto {
         font-size: 18px;
@@ -458,7 +459,7 @@ body {
         gap: 8px;
     }
     .experience-page .habilidad_tarjeta {
-        font-size: 15px;
+        font-size: 12px;
         padding: 8px 12px;
     }
 }
