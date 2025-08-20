@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Presentation</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="video-page">
+    <header class="header">
+        <nav class="header_menu">
+            <a class="header_menu_link" href="index.html">Home</a>
+            <a class="header_menu_link" href="about.html">About me</a>
+            <a class="header_menu_link" href="experience.html">Experience</a>
+            <a class="header_menu_link" href="video.html">Video</a>
+        </nav>
+    </header>
+
+    <main class="presentacion" style="flex-direction:column; align-items:center;">
+        <h1 class="presentacion_contenido_titulo" style="margin-bottom:24px;">Video Presentation</h1>
+        <div style="max-width:700px; width:100%; display:flex; justify-content:center;">
+            <video controls width="100%" poster="./assets/video-poster.jpg">
+                <source src="./assets/presentacion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="presentacion_contenido_texto" style="margin-top:24px; text-align:center;">
+            Welcome! Here you can watch my personal video presentation and get to know me better.
+        </p>
+    </main>
+
+    <footer class="footer">
+        <p>angelicagh04@gmail.com</p>
+    </footer>
+</body>
+</html>

@@ -349,6 +349,38 @@ body {
     background-color: #22d4fd22;
 }
 
+.video-page .presentacion {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 70vh;
+}
+
+.video-page .presentacion_contenido_titulo {
+    font-size: 36px;
+    font-family: var(--fuente-secundaria);
+    color: var(--color-third);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.video-page video {
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(34, 212, 253, 0.15);
+    background: #181818;
+}
+
+.video-page .presentacion_contenido_texto {
+    font-size: 22px;
+    font-family: var(--fuente-principal);
+    color: var(--color-secondary);
+    margin-top: 24px;
+    text-align: center;
+    max-width: 700px;
+}
+
+
 /* ----- RESPONSIVE DESIGN ----- */
 
 /* Tablets (máximo 1024px) */
@@ -431,4 +463,19 @@ body {
     }
 }
 
-/* ...existing code... */
+/* Responsive para video */
+@media (max-width: 768px) {
+    .video-page .presentacion {
+        padding: 18px 2vw;
+    }
+    .video-page .presentacion_contenido_titulo {
+        font-size: 26px;
+    }
+    .video-page .presentacion_contenido_texto {
+        font-size: 16px;
+        max-width: 98vw;
+    }
+    .video-page video {
+        max-width: 98vw;
+    }
+}
